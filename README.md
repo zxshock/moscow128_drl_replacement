@@ -5,7 +5,9 @@ On my board the 5 pins responsible for the DRL gate were cut on my 2DS627 withou
 What?  
 Should be fairly obvious. Solder in 74LS27, place turned 24pin socket in holes, solder in place. Optionally solder in 10K-20K (I used 15K) resistors when using 6116 SRAMs and remove them from the Moscow-128 board (or leave them out on the daughterboard and replace them).  
 This shouldn't add more height than 1-2 sockets, depending on how it's soldered. Holes are big enough to fit it onto the underside of a turned socket, might require slightly thinner PCBs than usual - not a problem with most manufacturer's tho from experience.  
-You might also want to add 1N4148 diodes facing the data lines for the keyboard (D0-D4) on D44.  
+
+You might also want to add 1N4148 diodes with their cathodes facing the data lines for the keyboard (D0-D4) on D44.  
+I'll leave that up to you how to do it - I've soldered an adapter socket in the meantime, but you can also cut traces or solder them directly to the chip.  
 
 Successfully tested on perfboard with a HM6116LP-2  
 
