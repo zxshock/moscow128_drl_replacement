@@ -1,7 +1,10 @@
 # moscow128_drl_replacement
-Small daughterboard to replace the DRL logic for the programmable Joystick interface, as the pins on my 2DS627 were cut. Also I don't have easy access to the outdated KT3102b transistors. Trust issues with DRL stuff since building my first Pentagon 128 15 years ago also don't help.  
-This shouldn't add more height than 1-2 sockets, depending on how it's soldered. Holes are big enough to fit it onto the underside of a turned socket, might require slightly thinner PCBs than usual - not a problem with most manufacturer's tho from experience.
+Why?  
+On my board the 5 pins responsible for the DRL gate were cut on my 2DS627 without a chance to fix it. Also I don't have access to 537RU10 SRAMs or KT3102B transistors. Also happened to have 20 74ALS27 around without a project for them yet.  
 
-Built a perfboard prototype so far that's being tested within the next few days.  
+What?  
+Should be fairly obvious. Solder in 74LS27, place turned 24pin socket in holes, solder in place. Optional solder in 10K resistors when using 6116 SRAMs and remove them from the Moscow-128 board (or leave them out on the daughterboard and replace them).  
+This shouldn't add more height than 1-2 sockets, depending on how it's soldered. Holes are big enough to fit it onto the underside of a turned socket, might require slightly thinner PCBs than usual - not a problem with most manufacturer's tho from experience.  
+You might also want to add 1N4148 diodes facing the data lines for the keyboard (D0-D4) on D44.  
 
-NOTE: this requires removing at least 2 resistors and the transistor. I'll provide a map of which parts to remove and suggested soldering points for the recreated signal.
+Successfully tested on perfboard with a HM6116LP-2  
